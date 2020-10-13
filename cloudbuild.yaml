@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us.gcr.io/$PROJECT_ID/tcpdump:latest', '.']
+options:
+ machine_type: 'N1_HIGHCPU_32'
+images:
+- 'us.gcr.io/$PROJECT_ID/tcpdump:latest'
