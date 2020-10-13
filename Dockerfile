@@ -33,7 +33,7 @@ RUN cd /opt/tcpdump && make -j $(nproc) install
 RUN rm -rf /opt/tcpdump
 
 # Remove APK packages from earlier
-RUN apk del --purge $APK_DEPS
+#RUN apk del --purge $APK_DEPS
 
 # Set entrypoint to where tcpdump was automatically installed to
 ENTRYPOINT ["/usr/local/bin/tcpdump"]
