@@ -3,7 +3,7 @@ FROM alpine:edge
 
 ## Variables
 # Define APK packages to be installed for compiling tcpdump
-ENV APK_DEPS gcc libpcap-dev libcrypto1.1 make musl musl-dev perl libressl-dev
+ENV APK_DEPS gcc libpcap-dev libcrypto1.1 make musl musl-dev perl libcap-ng-dev libcap-dev grpc-dev libsmi openssl-dev
 
 ## Dependencies
 # Install APK dependencies
